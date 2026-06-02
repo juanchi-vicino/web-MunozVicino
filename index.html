@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLEST | Barber Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/blest1.png" alt="Logo BLEST Barbería" class="logo-img">
+                </a>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#inicio">INICIO</a></li>
+                    
+                    <!-- NUEVO MENÚ DESPLEGABLE DE CORTES -->
+                    <li class="dropdown-corte">
+                        <a href="#cortes" class="dropbtn">CORTES </i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#" class="open-lightbox" data-index="0">Skin Fade Clásico</a></li>
+                            <li><a href="#" class="open-lightbox" data-index="1">Mullet Moderno</a></li>
+                            <li><a href="#" class="open-lightbox" data-index="2">Taper Fade</a></li>
+                            <li><a href="#" class="open-lightbox" data-index="3">Global Platinado</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#informacion">INFORMACIÓN</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-inicio">
+            <div class="inicio-content fade-in">
+                <h1>BIENVENIDO A <span>BLEST</span></h1>
+                <p class="historia">
+                    Nacida en el corazón de Barrio Naón, BLEST empezó en 2020 como el sueño de un pibe que quería cambiar las reglas del juego. No quería ser solo una barbería más de paso, quería crear una familia. Un espacio donde las risas, la buena música y los cortes impecables se encuentren. Hoy, somos el punto de referencia para quienes buscan un estilo con identidad, desde el fade más limpio hasta el platinado más arriesgado. Entrás como cliente, salís como familia.
+                </p>
+                <a href="#servicios" class="btn-primary">Ver Precios</a>
+            </div>
+        </section>
+
+        <section id="cortes" class="section-cortes">
+            <h2>NUESTROS <span>TRABAJOS</span></h2>
+            <p class="subtitle">Buscá tu estilo. Si lo podés imaginar, lo podemos hacer. (Tocá las imágenes para ampliarlas)</p>
+            
+            <div class="galeria-flex">
+                <div class="card-corte">
+                    <!-- Se agregaron clases y data-index a las imágenes -->
+                    <img src="img/skin.webp" alt="Corte Skin Fade" class="gallery-img" data-index="0">
+                    <h3>Skin Fade Clásico</h3>
+                </div>
+                <div class="card-corte">
+                    <img src="img/mullet.webp" alt="Corte Mullet" class="gallery-img" data-index="1">
+                    <h3>Mullet Moderno</h3>
+                </div>
+                <div class="card-corte">
+                    <img src="img/taper.webp" alt="Corte Taper Fade" class="gallery-img" data-index="2">
+                    <h3>Taper Fade</h3>
+                </div>
+                <div class="card-corte">
+                    <img src="img/platinado.webp" alt="Colorimetría Platinado" class="gallery-img" data-index="3">
+                    <h3>Global Platinado</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section-servicios">
+            <h2>MENÚ DE <span>SERVICIOS</span></h2>
+            <div class="menu-precios">
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3>Corte completo</h3>
+                        <p>Asesoramiento, corte con máquina/tijera y peinado con cera.</p>
+                    </div>
+                    <span class="precio">$17.000</span>
+                </div>
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3>Corte + Barba </h3>
+                        <p>Corte completo + alineación, rebaje y perfilado barba.</p>
+                    </div>
+                    <span class="precio">$22.000</span>
+                </div>
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3>Solo Barba</h3>
+                        <p>Alineación, rebaje y perfilado.</p>
+                    </div>
+                    <span class="precio">$12.000</span>
+                </div>
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3> Global</h3>
+                        <p>Decoloración global y matizado (incluye corte).</p>
+                    </div>
+                    <span class="precio">$55.000</span>
+                </div>
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3> Mechas</h3>
+                        <p>Decoloración con gorro para mechas y matizado (incluye corte).</p>
+                    </div>
+                    <span class="precio">$50.000</span>
+                </div>
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3>Perfilado de Cejas</h3>
+                        <span class="precio">GRATIS!</span>
+                    </div>
+                </div>
+                <div class="item-servicio">
+                    <div class="servicio-info">
+                        <h3>Diseño/Freestyle</h3>
+                        <span class="precio">GRATIS!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="informacion" class="section-info">
+            <h2>NUESTRA <span>INFORMACIÓN</span></h2>
+            <p class="subtitle">Todo lo que necesitás saber para venir a cortarte con nosotros.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🕓 Horarios de Atención</h3>
+                    <p class="horario-destacado">Martes a Sábados</p>
+                    <p>10:30 a 13:00 hs / 14:30 a 20:00 hs</p>
+                </div>
+                <div class="info-card">
+                    <details class="dropdown-info">
+                        <summary>📍 Nuestras Sucursales</summary>
+                        <div class="details-content">
+                            <p><strong>Sede Naón:</strong> <a href="#" target="_blank" class="map-link">Montiel 1551, Barrio Naón, CABA.</a></p>
+                            <p><strong>Sede Liniers:</strong> <a href="#" target="_blank" class="map-link">Lisandro de la Torre 1112, Liniers, CABA.</a></p>
+                        </div>
+                    </details>
+                </div>
+                <div class="info-card">
+                    <details class="dropdown-info">
+                        <summary>💈 Nuestros Barberos</summary>
+                        <div class="details-content barberos-list">
+                            <div class="sede-barberos">
+                                <h4>📍 Sede Montiel</h4>
+                                <a href="https://instagram.com/tinchomaccarone" target="_blank">@tinchomaccarone</a>
+                                <a href="https://instagram.com/faculucchetta" target="_blank">@faculucchetta</a>
+                                <a href="https://instagram.com/tommyherreros" target="_blank">@tommyherreros</a>
+                                <a href="https://instagram.com/valen.blest" target="_blank">@valen.blest</a>
+                            </div>
+                            <div class="sede-barberos">
+                                <h4>📍 Sede Lisandro</h4>
+                                <a href="https://instagram.com/julianvicino.11" target="_blank">@julianvicino.11</a>
+                                <a href="https://instagram.com/mauriii.barberr" target="_blank">@mauriii.barberr</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-contacto">
+            <h2>PONETE EN <span>CONTACTO</span></h2>
+            <p class="subtitle">Escribinos y te responderemos a la brevedad.</p>
+            <form class="contacto-form">
+                <div class="form-group">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ESTRUCTURA DEL VISOR DE IMÁGENES (LIGHTBOX) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="prev-lightbox">&#10094;</button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Corte ampliado">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+        <button class="next-lightbox">&#10095;</button>
+    </div>
+
+    <footer>
+        <div class="footer-iconos">
+            <a href="https://www.instagram.com/blestbarbershop/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@blestbarbershop00" target="_blank" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/5491151267271" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BLEST Barbería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT COMPLETAMENTE ACTUALIZADO -->
+    <script>
+        // 1. Lógica del Menú Móvil
+        const navLinks = document.querySelectorAll('.nav-links a:not(.dropbtn)'); // Excluimos el botón desplegable
+        const menuToggle = document.getElementById('menu-toggle');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.checked = false; // Cierra el menú al tocar un link
+            });
+        });
+
+        // Toggle para el menú desplegable de cortes en móvil
+        const dropBtn = document.querySelector('.dropbtn');
+        const dropdownCorte = document.querySelector('.dropdown-corte');
+        
+        dropBtn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault(); // Evita que baje a la sección si solo quiere abrir el menú
+                dropdownCorte.classList.toggle('active');
+            }
+        });
+
+        // 2. Lógica para desplegables de información en PC
+        const detailsElements = document.querySelectorAll('.dropdown-info');
+        detailsElements.forEach((details) => {
+            if (window.innerWidth > 768) {
+                details.addEventListener('mouseover', () => { details.open = true; });
+                details.addEventListener('mouseout', () => { details.open = false; });
+            }
+        });
+
+        // 3. LÓGICA DEL VISOR DE IMÁGENES (LIGHTBOX)
+        // Base de datos de los cortes
+        const cutsData = [
+            { src: 'img/skin.webp', title: 'Skin Fade Clásico' },
+            { src: 'img/mullet.webp', title: 'Mullet Moderno' },
+            { src: 'img/taper.webp', title: 'Taper Fade' },
+            { src: 'img/platinado.webp', title: 'Global Platinado' }
+        ];
+
+        let currentImageIndex = 0;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+
+        // Función para abrir la galería en una imagen específica
+        function openLightbox(index) {
+            currentImageIndex = index;
+            updateLightbox();
+            lightbox.style.display = 'flex';
+        }
+
+        // Función para actualizar foto y texto
+        function updateLightbox() {
+            lightboxImg.src = cutsData[currentImageIndex].src;
+            lightboxCaption.textContent = cutsData[currentImageIndex].title;
+        }
+
+        // Función para cerrar la galería
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        // Función para pasar fotos con flechas
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = cutsData.length - 1; // Si va para atrás del 1ro, va al último
+            if (currentImageIndex >= cutsData.length) currentImageIndex = 0; // Si pasa el último, vuelve al 1ro
+            updateLightbox();
+        }
+
+        // Dar click en las fotos de la grilla
+        document.querySelectorAll('.gallery-img').forEach((img, index) => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => openLightbox(index));
+        });
+
+        // Dar click en las opciones del menú desplegable de cortes
+        document.querySelectorAll('.open-lightbox').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const index = parseInt(e.target.getAttribute('data-index'));
+                openLightbox(index);
+                menuToggle.checked = false; // Cierra el menú hamburguesa si está en móvil
+            });
+        });
+
+        // Controles de botones del lightbox
+        document.querySelector('.close-lightbox').addEventListener('click', closeLightbox);
+        document.querySelector('.prev-lightbox').addEventListener('click', () => changeImage(-1));
+        document.querySelector('.next-lightbox').addEventListener('click', () => changeImage(1));
+
+        // Cerrar si tocan la zona oscura fuera de la imagen
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+    </script>
+</body>
+</html>
